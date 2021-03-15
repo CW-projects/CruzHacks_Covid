@@ -2,7 +2,8 @@ from urllib.request import urlretrieve as retrieve
 import matplotlib.pyplot as plt
 import csv
 
-# url = "https://healthdata.gov/node/3736471/download"
+# looks like you are using a static download, but the API has changed.. using legacy will temporarily make the url work..
+# url = "https://legacy.healthdata.gov/node/3736471/download"
 # retrieve(url, "weekly_death_causes.csv")
 states_csv = open("weekly_death_causes.csv", "rt")
 rdr = csv.reader(states_csv)
